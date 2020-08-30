@@ -1,0 +1,20 @@
+FROM node:12-alpine
+
+ARG WEBHOOK_URL
+ARG GITHUB_TOKEN
+ARG PORT
+
+WORKDIR /webhook
+
+COPY ./package.json ./
+COPY ./yarn.lock ./
+
+RUN yarn install
+
+COPY ./index.ts ./
+
+RUN yarn build index.ts
+
+EXPOSE $PORT
+
+CMD ["node", "index"]

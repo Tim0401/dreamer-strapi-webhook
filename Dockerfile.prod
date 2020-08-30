@@ -1,0 +1,20 @@
+FROM node:12-alpine
+
+ARG WEBHOOK_URL
+ARG GITHUB_TOKEN
+ARG PORT
+
+WORKDIR /
+
+RUN git clone https://github.com/Tim0401/dreamer-strapi-webhook.git
+
+WORKDIR /dreamer-strapi-webhook
+RUN yarn install
+
+ENV NODE_ENV production
+
+RUN yarn build index.ts
+
+EXPOSE $PORT
+
+CMD ["node", "index"]

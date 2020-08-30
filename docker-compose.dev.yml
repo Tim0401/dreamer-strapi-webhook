@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  webhook:
+    container_name: webhook
+    build:
+      context: ./
+      dockerfile: Dockerfile.dev
+    env_file:
+     - ../.env
+    ports:
+      - ${PORT}:${PORT}
