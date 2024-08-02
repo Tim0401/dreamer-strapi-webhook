@@ -6,11 +6,11 @@ Strapiでの記事更新をGithubにトリガーするためだけのコンテ�
 
 ## 運用中
 
-https://dreamer.cyou/  
+https://ak41.net
 
 ## 構築ログ
-https://dreamer.cyou/pages/5f5dd4925f91a4001cb4dc29  
-https://dreamer.cyou/articles/5f5a378a97b0e3001cebf2e8  
+https://ak41.net/pages/5f5dd4925f91a4001cb4dc29  
+https://ak41.net/articles/5f5a378a97b0e3001cebf2e8  
 
 ## 同時に運用しているリポジトリ
 
